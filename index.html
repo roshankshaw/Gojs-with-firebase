@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Firebase Real-time Data Transer with Go.js</title>
+  <!-- Copyright 1998-2021 by Northwoods Software Corporation. -->
+  <meta name="description" content="Drag and drop items between nodes." />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+
+
+  <script src="https://unpkg.com/gojs/release/go-debug.js"></script>
+  <!-- <script src="../assets/js/goSamples.js"></script>  this is only for the GoJS Samples framework -->
+  <script src="./firebase-config.js"></script>
+  <script src="./gojsscript.js">  </script>
+</head>
+<body onload="init()">
+<div id="sample">
+  <div id="myDiagramDiv" style="border: solid 1px black; width:100%; height:300px"></div>
+  <h3>Firebase Real Time data Transfer between tables Users1 and Users2 can be seen on logs in console </h3>
+  <p>Drag user names between User tables to move them; dragging within the same node can reorder them.
+     Users can be copied when holding down the control key; they are deleted when dropped in the diagram's background.
+     The "users" Nodes are not movable or copyable or deletable.</p>
+  <p>The model data, automatically updated after each change or undo or redo:</p>
+  <textarea id="mySavedModel" style="width:100%;height:300px"></textarea>
+</div>
+</body>
+</html>
