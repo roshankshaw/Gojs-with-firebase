@@ -19,6 +19,9 @@ firebase-config.js
 # it commented so all members can deploy to the same project(s) in .firebaserc.
 .firebaserc
 firebase.json
+#previous submissions
+index2.html
+gojsscript.js
 
 # Runtime data
 pids
